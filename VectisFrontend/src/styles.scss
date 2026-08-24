@@ -1,0 +1,605 @@
+/* ==========================================================================
+   Vectis — style.css
+   Charte visuelle alignée sur styles.scss (thème PrimeNG "nova" + surcouche
+   Vectis) : bleu institutionnel, cartes blanches sobres, typographie dense.
+   ========================================================================== */
+
+:root {
+  /* Couleurs — reprises telles quelles de styles.scss */
+  --primary: #005b9f;          /* .btn-outline-primary / .ui-button-white border-color */
+  --primary-dark: #004899;     /* header { background-color } */
+  --accent: #008bd2;           /* .title-section { color } */
+  --success: #52ae32;          /* .p-inputnumber-valid.valid */
+  --danger: #f85e43;           /* .p-inputnumber-valid.invalid */
+
+  --text: #1c344d;             /* label, .form-content { color } */
+  --text-secondary: #45596e;   /* td { color } */
+  --text-muted: #93a4b5;       /* .icon-edit */
+
+  --divider: #d9e3eb;          /* .c-dividing border-bottom */
+  --border: #ecedf1;           /* .form-content border */
+  --border-input: #ced4da;     /* .p-inputtext border */
+  --border-input-hover: #b2bfc8;
+  --border-disabled: #a6a6a654;
+
+  --bg-page: #eef2f6;
+  --bg-card: #ffffff;
+  --bg-disabled: #f4f4f4;
+  --bg-header: #f4f4f4;
+
+  --radius: 6px;               /* .form-content border-radius */
+  --radius-sm: 4px;            /* .p-dropdown border-radius */
+  --shadow-card: 0px 2px 6px rgba(0, 0, 0, 0.086); /* .form-content box-shadow */
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 12.5px;
+  color: var(--text);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 32px 20px 48px;
+}
+
+.main {
+  width: 100%;
+  max-width: 860px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 28px 32px 24px;
+}
+
+/* ==========================================================================
+   En-tête de page
+   ========================================================================== */
+
+.main__header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.main__title {
+  margin-top: 4px;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ==========================================================================
+   Stepper (fil du workflow)
+   ========================================================================== */
+
+.stepper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  padding: 16px 4px 20px;
+  border-bottom: 2px solid var(--divider);
+}
+
+.stepper__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  min-width: 64px;
+}
+
+.stepper__node {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-disabled);
+  border: 1px solid var(--border-input);
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.stepper__label {
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.stepper__step.is-active .stepper__node {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+.stepper__step.is-active .stepper__label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.stepper__step.is-done .stepper__node {
+  background: var(--success);
+  border-color: var(--success);
+  color: #ffffff;
+}
+
+.stepper__line {
+  flex: 1;
+  height: 2px;
+  margin: 0 4px 18px;
+  background: var(--divider);
+  transition: background-color 0.15s;
+}
+
+.stepper__line.is-filled {
+  background: var(--primary);
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.section-block {
+  margin-bottom: 8px;
+}
+
+.section-block__head {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--divider); /* .c-dividing */
+}
+
+.section-block__title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent); /* .title-section */
+}
+
+/* ==========================================================================
+   Tuiles de sélection (type de dépense)
+   ========================================================================== */
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-input);
+  border-radius: var(--radius-sm);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+
+.tile:hover {
+  border-color: var(--primary);
+  background: #f5f9fc;
+}
+
+.tile__check {
+  display: none;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+.tile__title {
+  flex: 1;
+}
+
+.tile.is-selected {
+  border-color: var(--primary);
+  background: #eaf3fb;
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.tile.is-selected .tile__check {
+  display: flex;
+}
+
+/* ==========================================================================
+   Cartes d'options (étapes du workflow)
+   ========================================================================== */
+
+.card.option-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  transition: opacity 0.15s;
+}
+
+.option-card__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.option-card__title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.option-card.is-on .option-card__title {
+  color: var(--primary);
+}
+
+/* Choix de validation (Avec / Sans validation) */
+
+.validation-choice {
+  display: none;
+  gap: 8px;
+}
+
+.validation-choice.is-visible {
+  display: flex;
+}
+
+.validation-choice input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.validation-choice label {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-input);
+  font-size: 10.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.validation-choice input:checked + label.v-yes {
+  background: var(--success);
+  border-color: var(--success);
+  color: #ffffff;
+}
+
+.validation-choice input:checked + label.v-no {
+  background: #eef1f4;
+  border-color: var(--border-input);
+  color: var(--text-secondary);
+}
+
+.validation-choice input:disabled + label {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ==========================================================================
+   Interrupteur (switch) — inspiré de p-inputswitch
+   ========================================================================== */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch__track {
+  position: absolute;
+  inset: 0;
+  background: #c7d3df;
+  border-radius: 999px;
+  transition: background-color 0.15s;
+}
+
+.switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s;
+}
+
+.switch input:checked ~ .switch__track {
+  background: var(--primary);
+}
+
+.switch input:checked ~ .switch__thumb {
+  transform: translateX(18px);
+}
+
+.switch input:disabled ~ .switch__track {
+  opacity: 0.5;
+}
+
+/* ==========================================================================
+   Barre d'action
+   ========================================================================== */
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 2px solid var(--divider);
+}
+
+.action-bar__status {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.action-bar__status strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.action-bar__buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btn {
+  padding: 8px 18px;
+  font-size: 11.5px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s, color 0.15s, opacity 0.15s;
+}
+
+/* .ui-button-white — bouton secondaire */
+.btn-ghost {
+  background: #ffffff;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: #efefef;
+}
+
+/* .btn-outline-primary / p-button — bouton principal */
+.btn-accent {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.btn-accent:hover:not(:disabled) {
+  background: #00477d;
+  border-color: #00477d;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 575px) {
+  .app-shell {
+    padding: 16px 12px 32px;
+  }
+
+  .main {
+    padding: 20px 16px 18px;
+  }
+
+  .stepper {
+    overflow-x: auto;
+  }
+
+  .action-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-bar__buttons {
+    width: 100%;
+  }
+
+  .btn {
+    flex: 1;
+  }
+}
+
+:host {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 650px;
+  max-height: 85vh;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+}
+
+.modal-header.is-success { background-color: #2e7d32; }
+.modal-header.is-warning { background-color: #f57c00; }
+.modal-header.is-error { background-color: #c62828; }
+
+.modal-title {
+  margin: 0;
+  font-size: 18px;
+  flex: 1;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Cartesian Metrics */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.summary-card {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.summary-card.is-success { background: #e8f5e9; color: #2e7d32; }
+.summary-card.is-danger { background: #ffebee; color: #c62828; }
+
+.summary-card__label { display: block; font-size: 12px; font-weight: 600; }
+.summary-card__value { font-size: 20px; font-weight: bold; }
+
+/* Database Error Box */
+.db-error-box {
+  background: #fff3e0;
+  border-left: 4px solid #f57c00;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.db-error-header { color: #e65100; margin-bottom: 6px; }
+.db-error-msg { margin: 0; font-size: 14px; color: #333; }
+.db-error-tech { margin-top: 8px; color: #666; font-family: monospace; }
+
+/* Error Table */
+.error-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.error-table th, .error-table td {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.error-table th { background: #fafafa; font-weight: 600; }
+
+.badge-sheet {
+  background: #e0e0e0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.err-msg { color: #c62828; }
+
+.modal-footer {
+  padding: 12px 20px;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}

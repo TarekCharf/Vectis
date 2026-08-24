@@ -1,0 +1,243 @@
+<div class="app-shell">
+  <main class="main">
+
+    <div class="main__header">
+      <div>
+        <span class="eyebrow">Import dépense</span>
+        <h2 class="main__title">Configurer l'import</h2>
+      </div>
+    </div>
+
+    <!-- Stepper Workflow -->
+    <div class="stepper" id="stepper">
+      <div class="stepper__step" [class.is-done]="selectedType">
+        <div class="stepper__node">{{ selectedType ? '✓' : '1' }}</div>
+        <div class="stepper__label">Type</div>
+      </div>
+      <div class="stepper__line" [class.is-filled]="selectedType"></div>
+
+      <div class="stepper__step" [class.is-active]="config.includeEngagement">
+        <div class="stepper__node">{{ config.includeEngagement ? '✓' : '2' }}</div>
+        <div class="stepper__label">Engagement</div>
+      </div>
+      <div class="stepper__line" [class.is-filled]="config.includeEngagement"></div>
+
+      <div class="stepper__step" [class.is-active]="config.includeLivraison">
+        <div class="stepper__node">{{ config.includeLivraison ? '✓' : '3' }}</div>
+        <div class="stepper__label">Livraison</div>
+      </div>
+      <div class="stepper__line" [class.is-filled]="config.includeLivraison"></div>
+
+      <div class="stepper__step" [class.is-active]="config.includeReception">
+        <div class="stepper__node">{{ config.includeReception ? '✓' : '4' }}</div>
+        <div class="stepper__label">Réception</div>
+      </div>
+      <div class="stepper__line" [class.is-filled]="config.includeReception"></div>
+
+      <div class="stepper__step" [class.is-active]="config.includeFacture">
+        <div class="stepper__node">{{ config.includeFacture ? '✓' : '5' }}</div>
+        <div class="stepper__label">Facture</div>
+      </div>
+    </div>
+
+    <!-- Étape 1 : Type de dépense -->
+    <section class="section-block">
+      <div class="section-block__head">
+        <span class="section-block__title">1. Type de dépense</span>
+      </div>
+      <div class="tile-grid">
+        <button type="button" class="tile" [class.is-selected]="selectedType === 'marche'" (click)="selectType('marche')">
+          <span class="tile__check">✓</span>
+          <span class="tile__title">Marché/BC/CDC</span>
+        </button>
+        <button type="button" class="tile" [class.is-selected]="selectedType === 'diverse'" (click)="selectType('diverse')">
+          <span class="tile__check">✓</span>
+          <span class="tile__title">Dépense diverse</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Étape 2 : Options du workflow -->
+    <section class="section-block" *ngIf="selectedType" style="margin-top: 32px;">
+      <div class="section-block__head">
+        <span class="section-block__title">2. Étapes à inclure</span>
+      </div>
+
+      <!-- Engagement -->
+      <div class="card option-card" [class.is-on]="config.includeEngagement" style="margin-top: 12px;">
+        <div class="option-card__left" style="width: 100%;">
+          <div style="flex: 1;">
+            <div class="option-card__title">Engagement</div>
+            <div class="validation-choice" [class.is-visible]="config.includeEngagement">
+              <input type="radio" id="eng-oui" [value]="true" [(ngModel)]="config.engagementAvecValidation" (change)="onValidationChange()" name="val-engagement">
+              <label class="v-yes" for="eng-oui">Avec validation</label>
+              <input type="radio" id="eng-non" [value]="false" [(ngModel)]="config.engagementAvecValidation" (change)="onValidationChange()" name="val-engagement">
+              <label class="v-no" for="eng-non">Sans validation</label>
+            </div>
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="config.includeEngagement" (change)="onToggleChange()">
+          <span class="switch__track"></span>
+          <span class="switch__thumb"></span>
+        </label>
+      </div>
+
+      <!-- Livraison -->
+      <div class="card option-card" [class.is-on]="config.includeLivraison" style="margin-top: 12px;">
+        <div class="option-card__left" style="width: 100%;">
+          <div style="flex: 1;">
+            <div class="option-card__title">Livraison</div>
+            <div class="validation-choice" [class.is-visible]="config.includeLivraison">
+              <input type="radio" id="liv-oui" [value]="true" [(ngModel)]="config.livraisonAvecValidation" [disabled]="livraisonOuiDisabled" (change)="onValidationChange()" name="val-livraison">
+              <label class="v-yes" for="liv-oui">Avec validation</label>
+              <input type="radio" id="liv-non" [value]="false" [(ngModel)]="config.livraisonAvecValidation" (change)="onValidationChange()" name="val-livraison">
+              <label class="v-no" for="liv-non">Sans validation</label>
+            </div>
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="config.includeLivraison" (change)="onToggleChange()">
+          <span class="switch__track"></span>
+          <span class="switch__thumb"></span>
+        </label>
+      </div>
+
+      <!-- Réception -->
+      <div class="card option-card" [class.is-on]="config.includeReception" [style.opacity]="receptionDisabled ? '0.5' : '1'" style="margin-top: 12px;">
+        <div class="option-card__left" style="width: 100%;">
+          <div style="flex: 1;">
+            <div class="option-card__title">Réception</div>
+            <div class="validation-choice" [class.is-visible]="config.includeReception">
+              <input type="radio" id="rec-oui" [value]="true" [(ngModel)]="config.receptionAvecValidation" [disabled]="receptionOuiDisabled" (change)="onValidationChange()" name="val-reception">
+              <label class="v-yes" for="rec-oui">Avec validation</label>
+              <input type="radio" id="rec-non" [value]="false" [(ngModel)]="config.receptionAvecValidation" (change)="onValidationChange()" name="val-reception">
+              <label class="v-no" for="rec-non">Sans validation</label>
+            </div>
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="config.includeReception" [disabled]="receptionDisabled" (change)="onToggleChange()">
+          <span class="switch__track"></span>
+          <span class="switch__thumb"></span>
+        </label>
+      </div>
+
+      <!-- Facture -->
+      <div class="card option-card" [class.is-on]="config.includeFacture" [style.opacity]="factureDisabled ? '0.5' : '1'" style="margin-top: 12px;">
+        <div class="option-card__left" style="width: 100%;">
+          <div style="flex: 1;">
+            <div class="option-card__title">Facture</div>
+            <div class="validation-choice" [class.is-visible]="config.includeFacture">
+              <input type="radio" id="fac-oui" [value]="true" [(ngModel)]="config.factureAvecValidation" (change)="onValidationChange()" name="val-facture">
+              <label class="v-yes" for="fac-oui">Avec validation</label>
+              <input type="radio" id="fac-non" [value]="false" [(ngModel)]="config.factureAvecValidation" (change)="onValidationChange()" name="val-facture">
+              <label class="v-no" for="fac-non">Sans validation</label>
+            </div>
+          </div>
+        </div>
+        <label class="switch">
+          <input type="checkbox" [(ngModel)]="config.includeFacture" [disabled]="factureDisabled" (change)="onToggleChange()">
+          <span class="switch__track"></span>
+          <span class="switch__thumb"></span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Barre d'action -->
+    <div class="action-bar">
+      <div class="action-bar__status" [innerHTML]="statusMessage"></div>
+      <div class="action-bar__buttons">
+        <input type="file" #fileInput (change)="onFileSelected($event)" accept=".xlsx" style="display: none;">
+        
+        <button type="button" class="btn btn-ghost" [disabled]="!selectedType || isImporting" (click)="fileInput.click()">
+          {{ isImporting ? 'Importation...' : 'Importer' }}
+        </button>
+        
+        <button type="button" class="btn btn-accent" [disabled]="!selectedType || isExporting" (click)="exportExcel()">
+          {{ isExporting ? 'Exportation...' : 'Exporter' }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Fenêtre Modale de Résultats/Erreurs -->
+<div class="modal-overlay" *ngIf="showModal" (click)="closeModal()">
+  <div class="modal-card" (click)="$event.stopPropagation()">
+    
+    <!-- En-tête -->
+    <div class="modal-header" [ngClass]="{
+      'is-success': modalType === 'success',
+      'is-warning': modalType === 'warning',
+      'is-error': modalType === 'error'
+    }">
+      <span class="modal-icon">
+        <ng-container [ngSwitch]="modalType">
+          <span *ngSwitchCase="'success'">✓</span>
+          <span *ngSwitchCase="'warning'">⚠</span>
+          <span *ngSwitchCase="'error'">✖</span>
+        </ng-container>
+      </span>
+      <h3 class="modal-title">{{ modalTitle }}</h3>
+      <button type="button" class="modal-close" (click)="closeModal()">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      
+      <!-- Résumé Métrique (si ImportResultDto disponible) -->
+      <div class="summary-cards" *ngIf="importSummary">
+        <div class="summary-card">
+          <span class="summary-card__label">Total</span>
+          <span class="summary-card__value">{{ importSummary.total }}</span>
+        </div>
+        <div class="summary-card is-success">
+          <span class="summary-card__label">Insérées</span>
+          <span class="summary-card__value">{{ importSummary.inserted }}</span>
+        </div>
+      </div>
+
+      <!-- Erreur Base de Données (DatabaseErrorDto) -->
+      <div class="db-error-box" *ngIf="databaseError">
+        <div class="db-error-header">
+          <strong>Type : {{ databaseError.errorType || 'Erreur DB' }}</strong>
+          <span *ngIf="databaseError.sqlErrorCode"> (Code : {{ databaseError.sqlErrorCode }})</span>
+        </div>
+        <p class="db-error-msg">{{ databaseError.message }}</p>
+        <div class="db-error-tech" *ngIf="databaseError.technicalMessage">
+          <small>Détail technique : {{ databaseError.technicalMessage }}</small>
+        </div>
+      </div>
+
+      <!-- Tableau des Erreurs Excel (ImportErrorDto) -->
+      <div class="table-container" *ngIf="importErrors.length > 0">
+        <p class="section-subtitle">Détail des anomalies détectées ({{ importErrors.length }}) :</p>
+        <table class="error-table">
+          <thead>
+            <tr>
+              <th>Feuille</th>
+              <th>Ligne</th>
+              <th>Colonne</th>
+              <th>Message</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let err of importErrors">
+              <td><span class="badge-sheet">{{ err.sheet }}</span></td>
+              <td><strong>{{ err.rowNumber }}</strong></td>
+              <td><code>{{ err.column }}</code></td>
+              <td class="err-msg">{{ err.message }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-accent" (click)="closeModal()">Fermer</button>
+    </div>
+
+  </div>
+</div>
+
+  </main>
+</div>
