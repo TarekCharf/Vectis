@@ -1,0 +1,74 @@
+[
+  {
+    "ContainingType": "VectisBackend.Controllers.ExportTemplateController",
+    "Method": "GetImportDepenseTemplate",
+    "RelativePath": "api/export-depense/excel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VectisBackend.Models.ExportDepenseRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VectisBackend.Controllers.ImportDepenseController",
+    "Method": "ImportExcel",
+    "RelativePath": "api/import-depense/excel",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeEngagement",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "EngagementAvecValidation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeLivraison",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "LivraisonAvecValidation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeReception",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ReceptionAvecValidation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "IncludeFacture",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "FactureAvecValidation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

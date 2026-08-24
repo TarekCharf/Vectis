@@ -1,0 +1,158 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "VectisBackend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/export-depense/excel": {
+      "post": {
+        "tags": [
+          "ExportTemplate"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportDepenseRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportDepenseRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExportDepenseRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/import-depense/excel": {
+      "post": {
+        "tags": [
+          "ImportDepense"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "File": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "IncludeEngagement": {
+                    "type": "boolean"
+                  },
+                  "EngagementAvecValidation": {
+                    "type": "boolean"
+                  },
+                  "IncludeLivraison": {
+                    "type": "boolean"
+                  },
+                  "LivraisonAvecValidation": {
+                    "type": "boolean"
+                  },
+                  "IncludeReception": {
+                    "type": "boolean"
+                  },
+                  "ReceptionAvecValidation": {
+                    "type": "boolean"
+                  },
+                  "IncludeFacture": {
+                    "type": "boolean"
+                  },
+                  "FactureAvecValidation": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "encoding": {
+                "File": {
+                  "style": "form"
+                },
+                "IncludeEngagement": {
+                  "style": "form"
+                },
+                "EngagementAvecValidation": {
+                  "style": "form"
+                },
+                "IncludeLivraison": {
+                  "style": "form"
+                },
+                "LivraisonAvecValidation": {
+                  "style": "form"
+                },
+                "IncludeReception": {
+                  "style": "form"
+                },
+                "ReceptionAvecValidation": {
+                  "style": "form"
+                },
+                "IncludeFacture": {
+                  "style": "form"
+                },
+                "FactureAvecValidation": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ExportDepenseRequestDto": {
+        "type": "object",
+        "properties": {
+          "typeDepense": {
+            "type": "string",
+            "nullable": true
+          },
+          "includeEngagement": {
+            "type": "boolean"
+          },
+          "engagementAvecValidation": {
+            "type": "boolean"
+          },
+          "includeLivraison": {
+            "type": "boolean"
+          },
+          "livraisonAvecValidation": {
+            "type": "boolean"
+          },
+          "includeReception": {
+            "type": "boolean"
+          },
+          "receptionAvecValidation": {
+            "type": "boolean"
+          },
+          "includeFacture": {
+            "type": "boolean"
+          },
+          "factureAvecValidation": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
