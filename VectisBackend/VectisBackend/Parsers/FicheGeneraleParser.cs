@@ -36,7 +36,7 @@ public class FicheGeneraleParser : Parser
                 Representant = ws.Cell(r, 10).GetString().Trim(),
                 CentreGestionnaire = ws.Cell(r, 11).GetString().Trim(),
                 MaitreOuvrage = ws.Cell(r, 12).GetString().Trim(),
-                DateDepense = TryDate(ws.Cell(r, 13),SheetName,r,"Date de Dépense",errors),
+                DateDepense = TryDate(ws.Cell(r, 13), SheetName, r, "Date de Dépense", errors),
                 CentreBeneficiaire = ws.Cell(r, 14).GetString().Trim(),
                 Devise = ws.Cell(r, 15).GetString().Trim(),
                 ChargeSuiviAgent = ws.Cell(r, 16).GetString().Trim(),
@@ -47,8 +47,8 @@ public class FicheGeneraleParser : Parser
                 Banque = ws.Cell(r, 21).GetString().Trim(),
                 NumeroCompte = ws.Cell(r, 22).GetString().Trim(),
                 PersonneHabilitee = ws.Cell(r, 23).GetString().Trim(),
-                TauxRemise = TryFloat(ws.Cell(r, 24),SheetName,r,"Taux de remise",errors),
-                TauxRetenueSource = TryFloat(ws.Cell(r, 25),SheetName,r,"Taux de retenue source",errors),
+                TauxRemise = TryFloat(ws.Cell(r, 24), SheetName, r, "Taux de remise", errors),
+                TauxRetenueSource = TryFloat(ws.Cell(r, 25), SheetName, r, "Taux de retenue source", errors),
                 Validation = ws.Cell(r, 26).GetString().Trim(),
                 DateValidation = TryDate(ws.Cell(r, 27), SheetName, r, "Date de validation", errors)
             };

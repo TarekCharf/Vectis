@@ -31,7 +31,7 @@ namespace VectisBackend.Services.ImplMappers
                 NumeroMarche = row.NumeroDepense,
                 CodeTypePrestation = codeTypePrestation,
                 NaturePrestation = codeNaturePrestation,
-                CodeTypeBudget = codeTypeBudget,
+                CodeTypeBudget = codeTypeBudget ?? 0,
                 LibelleMarche = row.Objet,
                 ObservationMarche = row.Observation,
                 CodeFournisseur = codeFournisseur,
@@ -102,6 +102,20 @@ namespace VectisBackend.Services.ImplMappers
                 CodeH = codeH, // ex: "1.001"
                 NbF = nbProduits,
                 ChOuRec = 0
+            };
+        }
+
+        public DepEtapeMarche MapToDepEtapeMarche(FicheGeneraleRowDto row, decimal codeEtape, decimal codeMarche, decimal nEtape)
+        {
+            return new DepEtapeMarche
+            {
+                CodeEtape = codeEtape,
+                CodeMarche = codeMarche,
+                Selectionner = "1",
+                DateEtape = row.DateDepense,
+                DateEtapePrevisionnelle = row.DateDepense,
+                Reference = "",
+                Netape = nEtape
             };
         }
 

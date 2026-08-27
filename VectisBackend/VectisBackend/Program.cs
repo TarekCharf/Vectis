@@ -17,10 +17,10 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<VectisDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("VECTIS"), sql =>
-        {
-            sql.UseCompatibilityLevel(100);
-            sql.CommandTimeout(120);
-        }));
+    {
+        sql.UseCompatibilityLevel(100);
+        sql.CommandTimeout(120);
+    }));
 
 builder.Services.AddScoped<IExcelSheetParser, FicheGeneraleParser>();
 builder.Services.AddScoped<IExcelSheetParser, BordereauxParser>();
@@ -37,6 +37,7 @@ builder.Services.AddScoped<IEngagementMapperService, EngagementMapperService>();
 builder.Services.AddScoped<ILivraisonMapperService, LivraisonMapperService>();
 builder.Services.AddScoped<IReceptionMapperService, ReceptionMapperService>();
 builder.Services.AddScoped<IFactureMapperService, FactureMapperService>();
+builder.Services.AddScoped<IValidationMapperService, ValidationMapperService>();
 
 builder.Services.AddScoped<IImportDepenseService, ImportDepenseService>();
 builder.Services.AddScoped<IReferentielService, ReferentielService>();

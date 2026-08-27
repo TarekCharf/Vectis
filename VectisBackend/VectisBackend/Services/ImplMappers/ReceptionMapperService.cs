@@ -36,17 +36,6 @@ public class ReceptionMapperService : IReceptionMapperService
         };
     }
 
-    public InstanceProcessus MapToInstanceProcessus(decimal codeReception, int valide)
-    {
-        return new InstanceProcessus
-        {
-            Designation = codeReception.ToString(),
-            IdProcessus = 51,
-            Statut = valide == 1 ? 1 : 4,
-            IdActeGestion = 51
-        };
-    }
-
     private static int? ParseOuiNonNumeric(string? value)
     {
         if (string.IsNullOrWhiteSpace(value)) return 0;

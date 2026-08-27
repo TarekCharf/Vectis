@@ -22,6 +22,7 @@ public class ImportDepenseService : IImportDepenseService
     private readonly ILivraisonMapperService _livMapper;
     private readonly IReceptionMapperService _recMapper;
     private readonly IFactureMapperService _facMapper;
+    private readonly IValidationMapperService _valMapper;
     private readonly IReferentielService _lookup;
 
     public ImportDepenseService(
@@ -34,6 +35,7 @@ public class ImportDepenseService : IImportDepenseService
         ILivraisonMapperService livMapper,
         IReceptionMapperService recMapper,
         IFactureMapperService facMapper,
+        IValidationMapperService valMapper,
         IReferentielService lookup)
     {
         _db = db;
@@ -45,6 +47,7 @@ public class ImportDepenseService : IImportDepenseService
         _livMapper = livMapper;
         _recMapper = recMapper;
         _facMapper = facMapper;
+        _valMapper = valMapper;
         _lookup = lookup;
     }
 
@@ -120,13 +123,19 @@ public class ImportDepenseService : IImportDepenseService
         if (errors.Any())
             return new ImportResultDto { Success = false, TotalRows = wbData.FicheGenerale.Count, InsertedRows = 0, Errors = errors };
         if (dbErrors.Any())
-            return new ImportResultDto { Success = false, TotalRows = wbData.FicheGenerale.Count, InsertedRows = 0, Errors = dbErrors.Select(e => new ImportErrorDto
+            return new ImportResultDto
             {
-                Sheet = e.Sheet,
-                RowNumber = e.RowNumber,
-                Column = e.Column,
-                Message = e.Message
-            }).ToList() };
+                Success = false,
+                TotalRows = wbData.FicheGenerale.Count,
+                InsertedRows = 0,
+                Errors = dbErrors.Select(e => new ImportErrorDto
+                {
+                    Sheet = e.Sheet,
+                    RowNumber = e.RowNumber,
+                    Column = e.Column,
+                    Message = e.Message
+                }).ToList()
+            };
 
         var tableTriggers = new Dictionary<string, List<string>>
         {
@@ -162,6 +171,10 @@ public class ImportDepenseService : IImportDepenseService
             var bordereauxByDepense = wbData.Bordereaux
                 .GroupBy(b => b.NumeroDepense, StringComparer.OrdinalIgnoreCase)
                 .ToDictionary(g => g.Key, g => g.ToList(), StringComparer.OrdinalIgnoreCase);
+
+            // Validations
+            InstanceProcessus? instanceProcessus = null;
+            InstanceEtape? instanceEtape = null;
 
             // --- BOUCLE PRINCIPALE (Parent + Enfants imbriqués) ---
             foreach (var fg in wbData.FicheGenerale)
@@ -204,6 +217,32 @@ public class ImportDepenseService : IImportDepenseService
                 var codeMarche = depMarche.CodeMarche;
                 _db.DepMarcheCentres.Add(_ficheMapper.MapToDepMarcheCentre(codeMarche, fk.CodeCentreBeneficiaire));
 
+                string type = "";
+                if (depMarche.CodeTypeContrat == 1 || depMarche.CodeTypeContrat == 4 || depMarche.CodeTypeContrat == 5) type = "Marché";
+                else if (depMarche.CodeTypeContrat == 2) type = "bon de commande";
+                else if (depMarche.CodeTypeContrat == 49) type = "CDC";
+
+                var fkVal = await _lookup.ResolveValidationCodesAsync(type, ct, errors);
+                if (errors.Any()) continue;
+
+                instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)codeMarche, fkVal.idProcessus, (int?)depMarche.Valide ?? 0);
+                _db.InstanceProcessuses.Add(instanceProcessus);
+                try
+                {
+                    await _db.SaveChangesAsync(ct);
+                }
+                catch (Exception ex)
+                {
+                    var dbError = MapExceptionToDbError(ex);
+                    AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                }
+
+                if (depMarche.Valide == 1)
+                {
+                    instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                    _db.InstanceEtapes.Add(instanceEtape);
+                }
+
                 var suivi = _ficheMapper.MapToDepChargeSuivi(fg, codeMarche, fk.CodeAgentChargeSuivi);
                 if (suivi != null) _db.DepChargeSuivis.Add(suivi);
 
@@ -232,6 +271,32 @@ public class ImportDepenseService : IImportDepenseService
                 _db.DepMarchesH.Add(depNode);
 
                 parentMap[fg.NumeroDepense] = (depMarche, parentCodeFils, parentCodeH);
+
+                // DEP ETAPE MARCHE
+                var etapes = await _db.GenEtapes
+                    .AsNoTracking()
+                    .Where(x => x.TypeMarche == depMarche.CodeTypeContrat && x.TypeBudget == depMarche.CodeTypeBudget)
+                    .OrderBy(x => x.OrdreAffichage)
+                    .Select(x => new { x.CodeEtape, x.Netape })
+                    .ToListAsync(ct);
+
+                if (etapes.Count == 0)
+                {
+                    errors.Add(new ImportErrorDto
+                    {
+                        Sheet = "Fiche Générale",
+                        RowNumber = fg.ExcelRow,
+                        Column = "N° Dépense",
+                        Message = "Aucune étape définie pour ce type de marché et budget."
+                    });
+                    continue;
+                }
+
+                var etapesMarche = etapes
+                    .Select(e => _ficheMapper.MapToDepEtapeMarche(fg, e.CodeEtape, codeMarche, e.Netape ?? 0))
+                    .ToList();
+
+                _db.DepEtapeMarches.AddRange(etapesMarche);
 
                 // B. GÉNÉRATION IMMÉDIATE DES ENFANTS (Bordereaux de ce Parent)
                 if (bordereauxByDepense.TryGetValue(fg.NumeroDepense, out var listBordereaux))
@@ -298,7 +363,14 @@ public class ImportDepenseService : IImportDepenseService
                         var tarifFrs = _bordMapper.MapToGenTarifFournisseur(br, tauxRabais, depMarche.CodeFournisseur, product.Value.codeProduit);
                         _db.GenTarifFournisseurs.Add(tarifFrs);
                     }
-                    depMarche.TauxTva = (float?)((depMarche.MontantMarcheTtc - depMarche.MontantMarcheHt) / depMarche.MontantMarcheHt) * 100;
+                    if (depMarche.MontantMarcheHt.HasValue && depMarche.MontantMarcheHt.Value > 0)
+                    {
+                        depMarche.TauxTva = (float?)((depMarche.MontantMarcheTtc - depMarche.MontantMarcheHt) / depMarche.MontantMarcheHt * 100m);
+                    }
+                    else
+                    {
+                        depMarche.TauxTva = 0;
+                    }
                 }
             }
 
@@ -340,7 +412,29 @@ public class ImportDepenseService : IImportDepenseService
                     .CountAsync(ct);
                 numOS++;
 
-                _db.DepOrdreServices.Add(_osMapper.MapToDepOrdreService(os, parent.Entity.CodeMarche, numOS));
+                var ordreService = _osMapper.MapToDepOrdreService(os, parent.Entity.CodeMarche, numOS, (decimal)parent.Entity.CodeTypeContrat, (DateTime)parent.Entity.DateNotification);
+                _db.DepOrdreServices.Add(ordreService);
+
+                var fkVal = await _lookup.ResolveValidationCodesAsync("OS", ct, errors);
+                if (errors.Any()) continue;
+
+                instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)ordreService.CodeOrdreService, fkVal.idProcessus, (int?)ordreService.Valide ?? 0);
+                _db.InstanceProcessuses.Add(instanceProcessus);
+                try
+                {
+                    await _db.SaveChangesAsync(ct);
+                }
+                catch (Exception ex)
+                {
+                    var dbError = MapExceptionToDbError(ex);
+                    AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                }
+
+                if (ordreService.Valide == 1)
+                {
+                    instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                    _db.InstanceEtapes.Add(instanceEtape);
+                }
             }
 
             // Engagements
@@ -384,7 +478,28 @@ public class ImportDepenseService : IImportDepenseService
                             AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
                             continue;
                         }
-                        numDepense= eng.NumeroDepense;
+                        numDepense = eng.NumeroDepense;
+
+                        var fkVal = await _lookup.ResolveValidationCodesAsync("engagement", ct, errors);
+                        if (errors.Any()) continue;
+
+                        instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)engagementCourant.CodeEngagement, fkVal.idProcessus, (int?)engagementCourant.Accorde ?? 0);
+                        _db.InstanceProcessuses.Add(instanceProcessus);
+                        try
+                        {
+                            await _db.SaveChangesAsync(ct);
+                        }
+                        catch (Exception ex)
+                        {
+                            var dbError = MapExceptionToDbError(ex);
+                            AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                        }
+
+                        if (engagementCourant.Accorde == 1)
+                        {
+                            instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                            _db.InstanceEtapes.Add(instanceEtape);
+                        }
                     }
 
                     // 2. Vérification qu'un engagement parent existe pour les lignes secondaires
@@ -442,7 +557,7 @@ public class ImportDepenseService : IImportDepenseService
 
                     var engagementLigne = _engMapper.MapToCptEngagementLigne(
                         eng, codeLigneEng.Value, fk.CodeDepense, fk.CodeLigne, fk.DisponibleCP, (decimal)fk.DisponibleCE,
-                        (decimal)fk.CreditEngCP, (decimal)fk.CreditEngCE, (decimal)(dotationLigne.CompteurCp ?? 0));
+                        (decimal)fk.CreditEngCP, (decimal)fk.CreditEngCE, (decimal)fk.CreditDef, (decimal)(dotationLigne.CompteurCp ?? 0));
 
                     _db.CptEngagementLignes.Add(engagementLigne);
 
@@ -530,6 +645,27 @@ public class ImportDepenseService : IImportDepenseService
                             continue;
                         }
                         numDepense = liv.NumeroDepense;
+
+                        var fkVal = await _lookup.ResolveValidationCodesAsync("Livraison", ct, errors);
+                        if (errors.Any()) continue;
+
+                        instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)releveCourant.CodeReleve, fkVal.idProcessus, (int?)releveCourant.ReleveValide ?? 0);
+                        _db.InstanceProcessuses.Add(instanceProcessus);
+                        try
+                        {
+                            await _db.SaveChangesAsync(ct);
+                        }
+                        catch (Exception ex)
+                        {
+                            var dbError = MapExceptionToDbError(ex);
+                            AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                        }
+
+                        if (releveCourant.ReleveValide == 1)
+                        {
+                            instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                            _db.InstanceEtapes.Add(instanceEtape);
+                        }
                     }
 
                     // 2. Vérification qu'un engagement parent existe pour les lignes secondaires
@@ -582,7 +718,7 @@ public class ImportDepenseService : IImportDepenseService
                 foreach (var rec in wbData.Receptions)
                 {
                     // 1. Détection : Est-ce une ligne principale (nouvelle livraison) ou une ligne fille ?
-                    bool estNouvelReception = !string.IsNullOrWhiteSpace(rec.NatureReception) 
+                    bool estNouvelReception = !string.IsNullOrWhiteSpace(rec.NatureReception)
                         && !string.IsNullOrWhiteSpace(rec.TypeReception) && rec.DateReception.HasValue;
 
                     if (estNouvelReception)
@@ -619,8 +755,26 @@ public class ImportDepenseService : IImportDepenseService
                         }
                         numDepense = rec.NumeroDepense;
 
-                        InstanceProcessus instance = _recMapper.MapToInstanceProcessus((decimal)codeReception, receptionCourant.Valider ?? 0);
-                        _db.InstanceProcessuses.Add(instance);
+                        var fkVal = await _lookup.ResolveValidationCodesAsync("récéption", ct, errors);
+                        if (errors.Any()) continue;
+
+                        instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)codeReception, fkVal.idProcessus, receptionCourant.Valider ?? 0);
+                        _db.InstanceProcessuses.Add(instanceProcessus);
+                        try
+                        {
+                            await _db.SaveChangesAsync(ct);
+                        }
+                        catch (Exception ex)
+                        {
+                            var dbError = MapExceptionToDbError(ex);
+                            AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                        }
+
+                        if (receptionCourant.Valider == 1)
+                        {
+                            instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                            _db.InstanceEtapes.Add(instanceEtape);
+                        }
                     }
 
                     // 2. Vérification qu'un engagement parent existe pour les lignes secondaires
@@ -760,6 +914,27 @@ public class ImportDepenseService : IImportDepenseService
 
                         _db.DepMontantsFactures.Add(montantsFacture);
                         _db.DepAllMontantsFactures.Add(allMontantsFacture);
+
+                        var fkVal = await _lookup.ResolveValidationCodesAsync("facturation", ct, errors);
+                        if (errors.Any()) continue;
+
+                        instanceProcessus = _valMapper.MapToInstanceProcessus((decimal)factureCourante.CodeFacture, fkVal.idProcessus, (int?)factureCourante.Valider ?? 0);
+                        _db.InstanceProcessuses.Add(instanceProcessus);
+                        try
+                        {
+                            await _db.SaveChangesAsync(ct);
+                        }
+                        catch (Exception ex)
+                        {
+                            var dbError = MapExceptionToDbError(ex);
+                            AddDbErr(dbErrors, dbError.Message, dbError.ErrorType, dbError.SqlErrorCode, dbError.EntityName);
+                        }
+
+                        if (factureCourante.Valider == 1)
+                        {
+                            instanceEtape = _valMapper.MaptoInstanceEtape(instanceProcessus.Id, fkVal.idEtape);
+                            _db.InstanceEtapes.Add(instanceEtape);
+                        }
                     }
 
                     // 2. Vérification qu'un engagement parent existe pour les lignes secondaires
@@ -884,10 +1059,10 @@ public class ImportDepenseService : IImportDepenseService
                                 existing.QteLivree + qteLivree,
                                 existing.QteAcceptee + qteAcceptee,
                                 existing.CodeProduit,
-                                existing.PrixUnite,                   
+                                existing.PrixUnite,
                                 existing.TauxTva,
                                 existing.Remise,
-                                existing.CodeCentreResp,      
+                                existing.CodeCentreResp,
                                 existing.TauxRsFacture,
                                 existing.TauxRemiseFacture
                             );
@@ -1147,7 +1322,7 @@ public class ImportDepenseService : IImportDepenseService
     {
         void add(string c, string m) => e.Add(new() { Sheet = "Réception", RowNumber = r.ExcelRow, Column = c, Message = m });
 
-        bool estNouvelleReception = !string.IsNullOrWhiteSpace(r.NatureReception) 
+        bool estNouvelleReception = !string.IsNullOrWhiteSpace(r.NatureReception)
             && !string.IsNullOrWhiteSpace(r.TypeReception) && r.DateReception.HasValue;
 
         // Obligatoire
@@ -1232,7 +1407,7 @@ public class ImportDepenseService : IImportDepenseService
             if (!setProduit.Contains(liv.ProduitNPrix))
                 errors.Add(new() { Sheet = "Livraison", RowNumber = liv.ExcelRow, Column = "Produit-N° Prix", Message = "Non trouvé en Borderaux de prix." });
         }
-            
+
         foreach (var rec in wb.Receptions)
         {
             if (!setDepense.Contains(rec.NumeroDepense))

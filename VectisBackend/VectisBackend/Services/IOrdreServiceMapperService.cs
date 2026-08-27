@@ -5,6 +5,6 @@ namespace VectisBackend.Services
 {
     public interface IOrdreServiceMapperService
     {
-        DepOrdreService MapToDepOrdreService(OrdreServiceRowDto row, decimal codeMarche, int numOS);
+        DepOrdreService MapToDepOrdreService(OrdreServiceRowDto row, decimal codeMarche, int numOS, decimal codeTypeContrat, DateTime dateDepense);
     }
 }

@@ -19,6 +19,7 @@ public class BdgDotationLigneBudgetaire
     [Column("CREDIT_PRE_ENGAGE_CE")] public double? CreditPreEngageCe { get; set; }
     [Column("CREDIT_ENGAGE_CP")] public double? CreditEngageCp { get; set; }
     [Column("CREDIT_ENGAGE_CE")] public double? CreditEngageCe { get; set; }
+    [Column("CREDIT_DEFINITIF")] public double? CreditDefinitif { get; set; }
     [Column("compteur_Cp")] public decimal? CompteurCp { get; set; }
     [Column("compteur_Ce")] public decimal? CompteurCe { get; set; }
 }

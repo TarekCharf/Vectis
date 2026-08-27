@@ -9,6 +9,4 @@ public interface IReceptionMapperService
         ReceptionRowDto row, decimal num, decimal codeMarche, decimal codeNature, decimal codeType);
 
     DepReceptionReleve MapToDepReceptionReleve(int codeReception, decimal codeReleve);
-
-    InstanceProcessus MapToInstanceProcessus(decimal codeReception, int valide);
 }

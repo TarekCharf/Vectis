@@ -24,17 +24,18 @@ public record FicheGeneraleCodes(
 );
 
 public record EngagementCodes(
-    decimal CodeTypeCredit, 
-    decimal Annee, 
+    decimal CodeTypeCredit,
+    decimal Annee,
     decimal CodeTypeContract,
-    decimal CodeDepense, 
+    decimal CodeDepense,
     decimal CodeLigne,
-    decimal DisponibleCP, 
+    decimal DisponibleCP,
     double DisponibleCE,
-    double CreditPreEngCP, 
+    double CreditPreEngCP,
     double CreditPreEngCE,
-    double CreditEngCP, 
-    double CreditEngCE
+    double CreditEngCP,
+    double CreditEngCE,
+    double CreditDef
 );
 
 public record LivraisonCodes(
@@ -86,4 +87,6 @@ public interface IReferentielService
     Task<LivraisonCodes> ResolveLivraisonCodesAsync(LivraisonRowDto row, CancellationToken ct, List<ImportErrorDto> errors);
     Task<ReceptionCodes> ResolveReceptionCodesAsync(ReceptionRowDto row, CancellationToken ct, List<ImportErrorDto> errors);
     Task<FactureCodes> ResolveFactureCodesAsync(FactureRowDto row, CancellationToken ct, List<ImportErrorDto> errors);
+    Task<(int idEtape, int idProcessus)> ResolveValidationCodesAsync(string type, CancellationToken ct, List<ImportErrorDto> errors);
+
 }

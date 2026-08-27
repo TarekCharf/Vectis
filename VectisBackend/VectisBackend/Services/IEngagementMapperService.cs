@@ -10,7 +10,7 @@ public interface IEngagementMapperService
 
     CptEngagementLigne MapToCptEngagementLigne
         (EngagementRowDto row, decimal codeEngagement, decimal codeDepense, decimal codeLigne, decimal disponibleCP,
-        decimal disponibleCE, decimal creditEngCP, decimal creditEngCE, decimal compteurCP);
+        decimal disponibleCE, decimal creditEngCP, decimal creditEngCE, decimal creditDef, decimal compteurCP);
 
 }
 

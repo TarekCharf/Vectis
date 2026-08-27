@@ -1,5 +1,4 @@
 ﻿using VectisBackend.Entities;
-using VectisBackend.Entities.Fk;
 using VectisBackend.Models.Import;
 
 namespace VectisBackend.Services.ImplMappers;
@@ -9,11 +8,17 @@ public class EngagementMapperService : IEngagementMapperService
     public CptEngagement MapToCptEngagement
         (EngagementRowDto row, decimal codeTypeCredit, decimal annee, string numOrdre, decimal codeTypeContract)
     {
+        decimal? codeObjEng = codeTypeContract;
+        if (codeTypeContract == 1 || codeTypeContract == 4 || codeTypeContract == 5)
+        {
+            codeObjEng = 1;
+        }
+
         return new CptEngagement
         {
             Annee = annee,
             NumeroOrdre = numOrdre,
-            CodeObjetEngagement = codeTypeContract,
+            CodeObjetEngagement = codeObjEng,
             TypeCredit = 2,
             DateEngagement = row.DateEngagement,
             Accorde = ParseOuiNonNumeric(row.Validation),
@@ -27,7 +32,7 @@ public class EngagementMapperService : IEngagementMapperService
     public CptEngagementLigne MapToCptEngagementLigne(
         EngagementRowDto row, decimal codeEngagement, decimal codeDepense, decimal codeLigne,
         decimal disponibleCP, decimal disponibleCE,
-        decimal creditEngCP, decimal creditEngCE,
+        decimal creditEngCP, decimal creditEngCE, decimal creditDef,
         decimal compteurCP)
     {
         return new CptEngagementLigne
@@ -41,6 +46,9 @@ public class EngagementMapperService : IEngagementMapperService
             DisponibleCe = disponibleCE,
             CreditEngageCp = creditEngCP,
             CreditEngageCe = creditEngCE,
+            CreditDefinitifCp = creditDef,
+            CreditDefinitifCe = disponibleCE,
+            MontantMarche = 0,
             CompteurCp = compteurCP,
             CompteurCe = 0
         };

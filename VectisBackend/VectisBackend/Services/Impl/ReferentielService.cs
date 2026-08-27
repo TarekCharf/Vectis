@@ -310,7 +310,7 @@ public class ReferentielService : IReferentielService
             CodeFournisseur: frs ?? 0,
             CodeDevise: dev ?? 0,
             CodeCentreBeneficiaire: codeCentreBeneficiaire ?? 0,
-            CodeTypeBudget: codeTypeBudget,
+            CodeTypeBudget: codeTypeBudget ?? 0,
             CodeTypePrestation: codeTypePrestation,
             CodeNaturePrestation: codeNaturePrestation,
             CodeCentreGestionnaire: codeCentreGestionnaire,
@@ -378,6 +378,7 @@ public class ReferentielService : IReferentielService
         double? creditPreEngCE = null;
         double? creditEngCP = null;
         double? creditEngCE = null;
+        double? creditDef = null;
 
         // Type crédit (obligatoire)
         codeTypeCredit = await _db.CptTypeCreditSupps
@@ -385,7 +386,7 @@ public class ReferentielService : IReferentielService
             .Select(x => (decimal?)x.CodeTypeCredit)
             .FirstOrDefaultAsync(ct);
 
-        if (!codeTypeCredit.HasValue && row.CategorieBudget is not null)
+        if (!codeTypeCredit.HasValue && !string.IsNullOrWhiteSpace(row.CategorieBudget))
             AddErr(errors, "Engagement", row.ExcelRow, "Catégorie budget", $"Introuvable: {row.CategorieBudget}");
 
         // N Depense (obligatoire)
@@ -420,7 +421,7 @@ public class ReferentielService : IReferentielService
         var codeLigneBdg = row.CodeLigneBudgetaire?.Trim();
 
         codeLigne = await _db.BdgStructureBudgetaireGenHs
-            .Where( bdg => ((bdg.Codification ?? "") + " - " + (bdg.Libelle ?? "")).Trim() == codeLigneBdg
+            .Where(bdg => ((bdg.Codification ?? "") + " - " + (bdg.Libelle ?? "")).Trim() == codeLigneBdg
                 && bdg.Annee == anneeString
                 && bdg.CategorieBudget != 1
                 && bdg.TypeCategorieBudget == 0
@@ -457,7 +458,8 @@ public class ReferentielService : IReferentielService
                 CreditEngageCP = bdgl != null ? (bdgl.CreditEngageCp ?? 0) : 0,
                 CreditEngageCE = bdgl != null ? (bdgl.CreditEngageCe ?? 0) : 0,
                 CreditPreEngCP = bdgl != null ? (bdgl.CreditPreEngageCp ?? 0) : 0,
-                CreditPreEngCE = bdgl != null ? (bdgl.CreditPreEngageCe ?? 0) : 0
+                CreditPreEngCE = bdgl != null ? (bdgl.CreditPreEngageCe ?? 0) : 0,
+                CreditDefinitif = bdgl != null ? (bdgl.CreditDefinitif ?? 0) : 0
             }
         ).FirstOrDefaultAsync(ct);
 
@@ -469,6 +471,7 @@ public class ReferentielService : IReferentielService
             creditPreEngCE = resultat.CreditPreEngCE;
             creditEngCP = resultat.CreditEngageCP;
             creditEngCE = resultat.CreditEngageCE;
+            creditDef = resultat.CreditDefinitif;
         }
 
         return new EngagementCodes(
@@ -482,7 +485,8 @@ public class ReferentielService : IReferentielService
             CreditPreEngCP: creditPreEngCP ?? 0,
             CreditPreEngCE: creditPreEngCE ?? 0,
             CreditEngCP: creditEngCP ?? 0,
-            CreditEngCE: creditEngCE ?? 0
+            CreditEngCE: creditEngCE ?? 0,
+            CreditDef: creditDef ?? 0
         );
     }
 
@@ -532,7 +536,7 @@ public class ReferentielService : IReferentielService
             from gv in villeGroup.DefaultIfEmpty()
             where gm.MagasinReforme != 1
                 && magasinierCodes.Contains((decimal)smm.CodeMagasinier)
-                && ((gm.MagasinId ?? "") + " " +(gm.Libelle ?? "") + " " + (gv.DescriptionVille ?? "")).Trim() == row.Magasin
+                && ((gm.MagasinId ?? "") + " " + (gm.Libelle ?? "") + " " + (gv.DescriptionVille ?? "")).Trim() == row.Magasin
             select (decimal?)gm.CodeMagasin
             ).FirstOrDefaultAsync(ct);
 
@@ -744,8 +748,8 @@ public class ReferentielService : IReferentielService
                 dvr.QuantiteAcpt,
                 dmh.PrixUnit,
                 dlr.TauxTva,
-                dmh.Remise,               
-                dvr.CodeCentre           
+                dmh.Remise,
+                dvr.CodeCentre
             )
             ).ToListAsync(ct);
 
@@ -791,6 +795,22 @@ public class ReferentielService : IReferentielService
             TauxRemiseFacture: TauxRemiseFacture ?? 0m,
             TauxRsFacture: TauxRsFacture ?? 0m
         );
+    }
+
+    // Referentiel Validation
+    public async Task<(int idEtape, int idProcessus)> ResolveValidationCodesAsync(string type, CancellationToken ct, List<ImportErrorDto> errors)
+    {
+        var etapeValidaion = await _db.EtapeValidations
+            .Where(x => x.Designation != null && x.Designation == "Validation " + type && x.Niveau == 1)
+            .Select(x => new { x.Id, x.IdProcessus })
+            .FirstOrDefaultAsync(ct);
+
+        if (etapeValidaion == null)
+            AddErr(errors, "Validation", 0, "Type validation", $"Introuvable: Validation {type}");
+
+        return etapeValidaion != null
+            ? (idEtape: etapeValidaion.Id, idProcessus: etapeValidaion.IdProcessus)
+            : (idEtape: 0, idProcessus: 0);
     }
 
     /// <summary>

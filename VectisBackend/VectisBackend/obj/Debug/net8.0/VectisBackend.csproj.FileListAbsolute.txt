@@ -146,3 +146,4 @@ C:\Users\Tarek\Desktop\VectisProjet\VectisBackend\VectisBackend\obj\Debug\net8.0
 C:\Users\Tarek\Desktop\VectisProjet\VectisBackend\VectisBackend\obj\Debug\net8.0\VectisBackend.pdb
 C:\Users\Tarek\Desktop\VectisProjet\VectisBackend\VectisBackend\obj\Debug\net8.0\VectisBackend.genruntimeconfig.cache
 C:\Users\Tarek\Desktop\VectisProjet\VectisBackend\VectisBackend\obj\Debug\net8.0\ref\VectisBackend.dll
+C:\Users\Tarek\Desktop\VectisProjet\VectisBackend\VectisBackend\obj\Debug\net8.0\VectisBackend.sourcelink.json

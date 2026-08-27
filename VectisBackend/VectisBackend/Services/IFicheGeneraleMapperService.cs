@@ -5,8 +5,8 @@ namespace VectisBackend.Services
 {
     public interface IFicheGeneraleMapperService
     {
-        DepMarche MapFicheGeneraleToDepMarche(FicheGeneraleRowDto row, decimal codeTypeContrat, 
-       decimal codeFournisseur, decimal codeDevise, decimal? codeTypeBudget, int? codeTypePrestation, decimal? codeNaturePrestation, 
+        DepMarche MapFicheGeneraleToDepMarche(FicheGeneraleRowDto row, decimal codeTypeContrat,
+       decimal codeFournisseur, decimal codeDevise, decimal? codeTypeBudget, int? codeTypePrestation, decimal? codeNaturePrestation,
        decimal? codeCentreGes, decimal? codeMo, decimal? codeModePaiement, decimal? codeBanquePaiement, decimal? personneHabilitee,
        decimal? delaiExecution, decimal? delaiGarantie, decimal? uniteDelaiExecution, decimal? uniteDelaiGarantie);
 
@@ -17,5 +17,7 @@ namespace VectisBackend.Services
         DepMarchesH MapDepenseNodeToDepMarchesH(
             string codeFils, string libelleNumeroDepense, string codePere, string codeH,
             decimal nbProduits, string typeDepense, decimal codeMarche);
+
+        DepEtapeMarche MapToDepEtapeMarche(FicheGeneraleRowDto row, decimal codeEtape, decimal codeMarche, decimal nEtape);
     }
 }

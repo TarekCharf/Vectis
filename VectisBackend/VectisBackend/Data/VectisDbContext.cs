@@ -15,6 +15,7 @@ public class VectisDbContext : DbContext
     public DbSet<DepOrdreService> DepOrdreServices => Set<DepOrdreService>();
     public DbSet<DepMarcheCentre> DepMarcheCentres => Set<DepMarcheCentre>();
     public DbSet<DepChargeSuivi> DepChargeSuivis => Set<DepChargeSuivi>();
+    public DbSet<DepEtapeMarche> DepEtapeMarches => Set<DepEtapeMarche>();
     public DbSet<GenTarifFournisseur> GenTarifFournisseurs => Set<GenTarifFournisseur>();
     public DbSet<CptEngagement> CptEngagements => Set<CptEngagement>();
     public DbSet<CptEngagementLigne> CptEngagementLignes => Set<CptEngagementLigne>();
@@ -23,13 +24,14 @@ public class VectisDbContext : DbContext
     public DbSet<DepVentilQuantiteReleve> DepVentilQuantiteReleves => Set<DepVentilQuantiteReleve>();
     public DbSet<DepReception> DepReceptions => Set<DepReception>();
     public DbSet<DepReceptionReleve> DepReceptionReleves => Set<DepReceptionReleve>();
-    public DbSet<InstanceProcessus> InstanceProcessuses => Set<InstanceProcessus>();
     public DbSet<DepFacture> DepFactures => Set<DepFacture>();
     public DbSet<DepFactureReleve> DepFactureReleves => Set<DepFactureReleve>();
     public DbSet<DepAvancementFacture> DepAvancementFactures => Set<DepAvancementFacture>();
     public DbSet<DepVentilMntsFacture> DepVentilMntsFactures => Set<DepVentilMntsFacture>();
     public DbSet<DepMontantsFacture> DepMontantsFactures => Set<DepMontantsFacture>();
     public DbSet<DepAllMontantsFacture> DepAllMontantsFactures => Set<DepAllMontantsFacture>();
+    public DbSet<InstanceProcessus> InstanceProcessuses => Set<InstanceProcessus>();
+    public DbSet<InstanceEtape> InstanceEtapes => Set<InstanceEtape>();
     public DbSet<Journal> Journals => Set<Journal>();
 
     //Fks
@@ -63,6 +65,8 @@ public class VectisDbContext : DbContext
     public DbSet<DepNatureReception> DepNatureReceptions => Set<DepNatureReception>();
     public DbSet<DepTypeReception> DepTypeReceptions => Set<DepTypeReception>();
     public DbSet<DepPeriode> DepPeriodes => Set<DepPeriode>();
+    public DbSet<EtapeValidation> EtapeValidations => Set<EtapeValidation>();
+    public DbSet<GenEtape> GenEtapes => Set<GenEtape>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
