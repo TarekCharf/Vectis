@@ -374,30 +374,6 @@ public class ImportDepenseService : IImportDepenseService
                 }
             }
 
-            // Gestion globale des erreurs
-            if (errors.Any())
-            {
-                await tx.RollbackAsync(ct);
-                return new ImportResultDto { Success = false, TotalRows = wbData.FicheGenerale.Count, InsertedRows = 0, Errors = errors };
-            }
-
-            if (dbErrors.Any())
-            {
-                return new ImportResultDto
-                {
-                    Success = false,
-                    TotalRows = wbData.FicheGenerale.Count,
-                    InsertedRows = 0,
-                    Errors = dbErrors.Select(e => new ImportErrorDto
-                    {
-                        Sheet = e.Sheet,
-                        RowNumber = e.RowNumber,
-                        Column = e.Column,
-                        Message = e.Message
-                    }).ToList()
-                };
-            }
-
             //Ordres de service
             foreach (var os in wbData.OrdresService)
             {

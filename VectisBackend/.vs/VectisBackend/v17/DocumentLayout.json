@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\impl\\exporttemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\impl\\exporttemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\impl\\importdepenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\impl\\importdepenseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\implmappers\\borderauxmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\implmappers\\borderauxmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\impl\\referentielservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\impl\\referentielservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\impl\\exporttemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\impl\\exporttemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\fichegeneraleparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\fichegeneraleparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\importdepenseformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\importdepenseformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\import\\fichegeneralerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\import\\fichegeneralerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\engagementparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\engagementparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\middleware\\globalexceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\middleware\\globalexceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\fk\\bdgdotationlignebudgetaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\bdgdotationlignebudgetaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depmarchesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depmarchesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depallmontantsfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depallmontantsfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\data\\vectisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\data\\vectisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\controllers\\importdepensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\controllers\\importdepensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\controllers\\exporttemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\controllers\\exporttemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\implmappers\\ordreservicemapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,24 +99,8 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\ireferentielservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\fichegeneraleparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\fichegeneraleparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\import\\fichegeneralerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\import\\fichegeneralerowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\data\\vectisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\data\\vectisdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\fk\\depnaturemarche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\depnaturemarche.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\ireceptionmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\etapevalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\fk\\bdgdotationlignebudgetaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\bdgdotationlignebudgetaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depordreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depordreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -133,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\ivalidationmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\ivalidationmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\services\\implmappers\\borderauxmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\services\\implmappers\\borderauxmapperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\livraisonparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -175,10 +215,6 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\gendevise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depfacturereleve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depfacturereleve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -191,20 +227,12 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\import\\engagementrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depallmontantsfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depallmontantsfacture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\factureparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\factureparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\receptionparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\receptionparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\engagementparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\engagementparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\ordreserviceparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -235,14 +263,6 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\import\\receptionrowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\controllers\\importdepensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\controllers\\importdepensecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\controllers\\exporttemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\controllers\\exporttemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\parsers\\iexcelsheetparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\parsers\\iexcelsheetparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -251,16 +271,8 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\workbookimportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\middleware\\globalexceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\middleware\\globalexceptionhandlerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\importdepenserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\importdepenserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\importdepenseformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\models\\importdepenseformrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\models\\exportdepenserequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -309,10 +321,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\gentariffournisseur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\gentariffournisseur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depmarchesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\depmarchesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\entities\\depmarchecentre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -427,10 +435,6 @@
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\entities\\fk\\deptypeprestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|c:\\users\\tarek\\desktop\\vectisprojet\\vectisbackend\\vectisbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FF069EA9-B87C-437F-828F-3CF53A53A5B4}|VectisBackend\\VectisBackend.csproj|solutionrelative:vectisbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -442,7 +446,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -450,59 +454,20 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "global.json",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\global.json",
+              "RelativeDocumentMoniker": "VectisBackend\\global.json",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\global.json",
+              "RelativeToolTip": "VectisBackend\\global.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-31T14:49:39.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IFicheGeneraleMapperService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T11:57:34.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImportDepenseService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
-              "ViewState": "AgIAAMwDAAAAAAAAAAAAANkDAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T09:56:04.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExportTemplateService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-08T12:36:35.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrdreServiceMapperService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowB8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T11:35:59.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ReferentielService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ReferentielService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\Impl\\ReferentielService.cs",
@@ -515,54 +480,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FicheGeneraleMapperService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ImportDepenseService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\Impl\\ImportDepenseService.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAnwEsBAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T11:35:33.966Z",
+              "WhenOpened": "2026-08-05T09:56:04.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DepMarche.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarche.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMarche.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarche.cs",
-              "RelativeToolTip": "VectisBackend\\Entities\\DepMarche.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Title": "BorderauxMapperService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T10:59:05.483Z",
+              "WhenOpened": "2026-08-05T11:35:46.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "VectisBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\appsettings.json",
+              "RelativeToolTip": "VectisBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-08-05T09:06:14.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Program.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Program.cs",
+              "RelativeToolTip": "VectisBackend\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:19:02.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExportTemplateService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\Impl\\ExportTemplateService.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAowA0AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T12:36:35.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IReferentielService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IReferentielService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\IReferentielService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IReferentielService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\IReferentielService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T09:53:24.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "FicheGeneraleParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\FicheGeneraleParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\FicheGeneraleParser.cs",
               "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\FicheGeneraleParser.cs",
               "RelativeToolTip": "VectisBackend\\Parsers\\FicheGeneraleParser.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwDQAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwCgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-05T10:09:41.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ImportDepenseFormRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportDepenseFormRequest.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Models\\ImportDepenseFormRequest.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportDepenseFormRequest.cs",
+              "RelativeToolTip": "VectisBackend\\Models\\ImportDepenseFormRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T14:27:07.581Z",
               "EditorCaption": ""
             },
             {
@@ -573,7 +577,7 @@
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\FicheGeneraleRowDto.cs",
               "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\FicheGeneraleRowDto.cs",
               "RelativeToolTip": "VectisBackend\\Models\\Import\\FicheGeneraleRowDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAA+wA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-05T11:03:51.953Z",
               "EditorCaption": ""
@@ -581,19 +585,183 @@
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "EngagementParser.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\EngagementParser.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Parsers\\EngagementParser.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\EngagementParser.cs",
+              "RelativeToolTip": "VectisBackend\\Parsers\\EngagementParser.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T18:58:16.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GlobalExceptionHandlerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
+              "RelativeToolTip": "VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-21T19:25:58.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BdgDotationLigneBudgetaire.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
+              "RelativeToolTip": "VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-10T18:30:21.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DepMarchesH.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarchesH.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMarchesH.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarchesH.cs",
+              "RelativeToolTip": "VectisBackend\\Entities\\DepMarchesH.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAYwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:59:41.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DepAllMontantsFacture.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepAllMontantsFacture.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepAllMontantsFacture.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepAllMontantsFacture.cs",
+              "RelativeToolTip": "VectisBackend\\Entities\\DepAllMontantsFacture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T15:06:33.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepFacture.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepFacture.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepFacture.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepFacture.cs",
+              "RelativeToolTip": "VectisBackend\\Entities\\DepFacture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T15:04:47.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "VectisDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Data\\VectisDbContext.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Data\\VectisDbContext.cs",
               "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Data\\VectisDbContext.cs",
               "RelativeToolTip": "VectisBackend\\Data\\VectisDbContext.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAxwEUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-05T09:24:48.042Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
+              "Title": "ImportDepenseController.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ImportDepenseController.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Controllers\\ImportDepenseController.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ImportDepenseController.cs",
+              "RelativeToolTip": "VectisBackend\\Controllers\\ImportDepenseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:57:17.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExportTemplateController.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ExportTemplateController.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Controllers\\ExportTemplateController.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ExportTemplateController.cs",
+              "RelativeToolTip": "VectisBackend\\Controllers\\ExportTemplateController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T12:38:04.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FicheGeneraleMapperService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\FicheGeneraleMapperService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T11:35:33.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrdreServiceMapperService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\OrdreServiceMapperService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T11:35:59.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IFicheGeneraleMapperService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\IFicheGeneraleMapperService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T11:57:34.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DepMarche.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarche.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMarche.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarche.cs",
+              "RelativeToolTip": "VectisBackend\\Entities\\DepMarche.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T10:59:05.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IReferentielService.cs",
+              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IReferentielService.cs",
+              "RelativeDocumentMoniker": "VectisBackend\\Services\\IReferentielService.cs",
+              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IReferentielService.cs",
+              "RelativeToolTip": "VectisBackend\\Services\\IReferentielService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-05T09:53:24.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "DepNatureMarche.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepNatureMarche.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepNatureMarche.cs",
@@ -601,25 +769,11 @@
               "RelativeToolTip": "VectisBackend\\Entities\\Fk\\DepNatureMarche.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T13:18:37.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T13:18:37.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Program.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Program.cs",
-              "RelativeToolTip": "VectisBackend\\Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAwwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T09:19:02.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 25,
               "Title": "IReceptionMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IReceptionMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IReceptionMapperService.cs",
@@ -631,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "IOrdreServiceMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IOrdreServiceMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IOrdreServiceMapperService.cs",
@@ -643,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "IEngagementMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IEngagementMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IEngagementMapperService.cs",
@@ -655,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "ValidationMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\ValidationMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\ValidationMapperService.cs",
@@ -667,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 29,
               "Title": "ReceptionMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\ReceptionMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\ReceptionMapperService.cs",
@@ -679,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 30,
               "Title": "EngagementMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\EngagementMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\EngagementMapperService.cs",
@@ -691,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 31,
               "Title": "ImportResultDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportResultDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\ImportResultDto.cs",
@@ -703,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "InstanceEtape.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\InstanceEtape.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\InstanceEtape.cs",
@@ -715,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 33,
               "Title": "DepEtapeMarche.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepEtapeMarche.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepEtapeMarche.cs",
@@ -727,7 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 34,
               "Title": "CptEngagementLigne.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\CptEngagementLigne.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\CptEngagementLigne.cs",
@@ -739,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 35,
               "Title": "CptEngagement.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\CptEngagement.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\CptEngagement.cs",
@@ -751,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "GenEtape.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenEtape.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenEtape.cs",
@@ -763,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "EtapeValidation.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\EtapeValidation.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\EtapeValidation.cs",
@@ -775,19 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "BdgDotationLigneBudgetaire.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
-              "RelativeToolTip": "VectisBackend\\Entities\\Fk\\BdgDotationLigneBudgetaire.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T18:30:21.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 38,
               "Title": "DepOrdreService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepOrdreService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepOrdreService.cs",
@@ -799,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 39,
               "Title": "DepChargeSuivi.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepChargeSuivi.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepChargeSuivi.cs",
@@ -811,7 +953,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 40,
               "Title": "IBorderauxMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IBorderauxMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IBorderauxMapperService.cs",
@@ -823,7 +965,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 41,
               "Title": "BdgStructureBudgetaireGenH.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgStructureBudgetaireGenH.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgStructureBudgetaireGenH.cs",
@@ -835,7 +977,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 42,
               "Title": "BdgDotationCreditSupp.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgDotationCreditSupp.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgDotationCreditSupp.cs",
@@ -847,7 +989,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 43,
               "Title": "IValidationMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IValidationMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IValidationMapperService.cs",
@@ -859,19 +1001,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "BorderauxMapperService.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
-              "RelativeToolTip": "VectisBackend\\Services\\ImplMappers\\BorderauxMapperService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T11:35:46.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 44,
               "Title": "LivraisonParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\LivraisonParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\LivraisonParser.cs",
@@ -883,7 +1013,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 46,
               "Title": "DatabaseErrorDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\DatabaseErrorDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\DatabaseErrorDto.cs",
@@ -895,7 +1025,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 47,
               "Title": "ImportErrorDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportErrorDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\ImportErrorDto.cs",
@@ -907,7 +1037,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 45,
               "Title": "BorderauxParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\BorderauxParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\BorderauxParser.cs",
@@ -919,7 +1049,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 48,
               "Title": "BorderauxRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\BorderauxRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\BorderauxRowDto.cs",
@@ -931,7 +1061,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 49,
               "Title": "ILivraisonMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ILivraisonMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ILivraisonMapperService.cs",
@@ -943,7 +1073,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 50,
               "Title": "InstanceProcessus.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\InstanceProcessus.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\InstanceProcessus.cs",
@@ -955,7 +1085,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 52,
               "Title": "GenDevise.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenDevise.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenDevise.cs",
@@ -967,19 +1097,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "DepFacture.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepFacture.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepFacture.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepFacture.cs",
-              "RelativeToolTip": "VectisBackend\\Entities\\DepFacture.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAA3wF0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:04:47.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 53,
               "Title": "DepFactureReleve.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepFactureReleve.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepFactureReleve.cs",
@@ -991,7 +1109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 51,
               "Title": "GenCentreResponsabilite.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenCentreResponsabilite.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenCentreResponsabilite.cs",
@@ -1003,7 +1121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 54,
               "Title": "FactureMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\FactureMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\FactureMapperService.cs",
@@ -1015,7 +1133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 55,
               "Title": "EngagementRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\EngagementRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\EngagementRowDto.cs",
@@ -1027,19 +1145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "DepAllMontantsFacture.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepAllMontantsFacture.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepAllMontantsFacture.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepAllMontantsFacture.cs",
-              "RelativeToolTip": "VectisBackend\\Entities\\DepAllMontantsFacture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJEBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-17T15:06:33.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 56,
               "Title": "FactureParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\FactureParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\FactureParser.cs",
@@ -1051,7 +1157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 57,
               "Title": "ReceptionParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\ReceptionParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\ReceptionParser.cs",
@@ -1063,7 +1169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 58,
               "Title": "OrdreServiceParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\OrdreServiceParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\OrdreServiceParser.cs",
@@ -1075,19 +1181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "EngagementParser.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\EngagementParser.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Parsers\\EngagementParser.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\EngagementParser.cs",
-              "RelativeToolTip": "VectisBackend\\Parsers\\EngagementParser.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-10T18:58:16.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 59,
               "Title": "Parser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\Parser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\Parser.cs",
@@ -1099,7 +1193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 60,
               "Title": "LivraisonMapperService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\ImplMappers\\LivraisonMapperService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\ImplMappers\\LivraisonMapperService.cs",
@@ -1111,7 +1205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 61,
               "Title": "Journal.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Journal.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Journal.cs",
@@ -1123,7 +1217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 62,
               "Title": "DepPeriode.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepPeriode.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepPeriode.cs",
@@ -1135,7 +1229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 63,
               "Title": "LivraisonRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\LivraisonRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\LivraisonRowDto.cs",
@@ -1147,7 +1241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 64,
               "Title": "ReceptionRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\ReceptionRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\ReceptionRowDto.cs",
@@ -1159,31 +1253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "ImportDepenseController.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ImportDepenseController.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Controllers\\ImportDepenseController.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ImportDepenseController.cs",
-              "RelativeToolTip": "VectisBackend\\Controllers\\ImportDepenseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T09:57:17.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "ExportTemplateController.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ExportTemplateController.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Controllers\\ExportTemplateController.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Controllers\\ExportTemplateController.cs",
-              "RelativeToolTip": "VectisBackend\\Controllers\\ExportTemplateController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-08T12:38:04.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 65,
               "Title": "IExcelSheetParser.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Parsers\\IExcelSheetParser.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Parsers\\IExcelSheetParser.cs",
@@ -1195,7 +1265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 66,
               "Title": "WorkbookImportDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\WorkbookImportDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\WorkbookImportDto.cs",
@@ -1207,19 +1277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "GlobalExceptionHandlerExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
-              "RelativeToolTip": "VectisBackend\\Middleware\\GlobalExceptionHandlerExtensions.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-21T19:25:58.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 67,
               "Title": "ImportDepenseRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportDepenseRequestDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\ImportDepenseRequestDto.cs",
@@ -1231,19 +1289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "ImportDepenseFormRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportDepenseFormRequest.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Models\\ImportDepenseFormRequest.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ImportDepenseFormRequest.cs",
-              "RelativeToolTip": "VectisBackend\\Models\\ImportDepenseFormRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T14:27:07.581Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "ExportDepenseRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\ExportDepenseRequestDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\ExportDepenseRequestDto.cs",
@@ -1255,7 +1301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "IImportDepenseService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IImportDepenseService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IImportDepenseService.cs",
@@ -1267,7 +1313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "StepSelectionConstraints.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\StepSelectionConstraints.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\StepSelectionConstraints.cs",
@@ -1279,7 +1325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "DepMontantsFacture.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMontantsFacture.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMontantsFacture.cs",
@@ -1291,7 +1337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "DepVentilMntsFacture.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepVentilMntsFacture.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepVentilMntsFacture.cs",
@@ -1303,7 +1349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "DepAvancementFacture.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepAvancementFacture.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepAvancementFacture.cs",
@@ -1315,7 +1361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "DepReceptionReleve.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepReceptionReleve.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepReceptionReleve.cs",
@@ -1327,7 +1373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "DepReception.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepReception.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepReception.cs",
@@ -1339,7 +1385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "DepLigneReleveMarche.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepLigneReleveMarche.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepLigneReleveMarche.cs",
@@ -1351,7 +1397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "DepVentilQuantiteReleve.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepVentilQuantiteReleve.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepVentilQuantiteReleve.cs",
@@ -1363,7 +1409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "DepReleveMarche.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepReleveMarche.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepReleveMarche.cs",
@@ -1375,7 +1421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "GenTarifFournisseur.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\GenTarifFournisseur.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\GenTarifFournisseur.cs",
@@ -1387,19 +1433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "DepMarchesH.cs",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarchesH.cs",
-              "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMarchesH.cs",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarchesH.cs",
-              "RelativeToolTip": "VectisBackend\\Entities\\DepMarchesH.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwF0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-05T10:59:41.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 80,
               "Title": "DepMarcheCentre.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\DepMarcheCentre.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\DepMarcheCentre.cs",
@@ -1411,7 +1445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 81,
               "Title": "IFactureServiceMapper.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IFactureServiceMapper.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IFactureServiceMapper.cs",
@@ -1423,7 +1457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 82,
               "Title": "IExportTemplateService.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Services\\IExportTemplateService.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Services\\IExportTemplateService.cs",
@@ -1435,7 +1469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 83,
               "Title": "FactureRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\FactureRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\FactureRowDto.cs",
@@ -1447,7 +1481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 84,
               "Title": "OrdreServiceRowDto.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Models\\Import\\OrdreServiceRowDto.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Models\\Import\\OrdreServiceRowDto.cs",
@@ -1459,7 +1493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 85,
               "Title": "DepNatureReception.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepNatureReception.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepNatureReception.cs",
@@ -1471,7 +1505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 86,
               "Title": "DepTypeReception.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepTypeReception.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepTypeReception.cs",
@@ -1483,7 +1517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 87,
               "Title": "StkMagasinMagasinier.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\StkMagasinMagasinier.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\StkMagasinMagasinier.cs",
@@ -1495,7 +1529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 88,
               "Title": "GenVille.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenVille.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenVille.cs",
@@ -1507,7 +1541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 89,
               "Title": "GenMagasin.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenMagasin.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenMagasin.cs",
@@ -1519,7 +1553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 90,
               "Title": "StkMagasinier.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\StkMagasinier.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\StkMagasinier.cs",
@@ -1531,7 +1565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 91,
               "Title": "GenCentreRespContact.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenCentreRespContact.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenCentreRespContact.cs",
@@ -1543,7 +1577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 92,
               "Title": "BdgExercice.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgExercice.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgExercice.cs",
@@ -1555,7 +1589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "CptTypeCreditSupp.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\CptTypeCreditSupp.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\CptTypeCreditSupp.cs",
@@ -1567,7 +1601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "BdgTypeBudget.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgTypeBudget.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgTypeBudget.cs",
@@ -1579,7 +1613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "BdgMaitreOuvrage.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\BdgMaitreOuvrage.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\BdgMaitreOuvrage.cs",
@@ -1591,7 +1625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "DepNaturePrestation.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepNaturePrestation.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepNaturePrestation.cs",
@@ -1603,7 +1637,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "GenCentreResponsabiliteH.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenCentreResponsabiliteH.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenCentreResponsabiliteH.cs",
@@ -1615,7 +1649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "DepTypeContrat.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepTypeContrat.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepTypeContrat.cs",
@@ -1627,7 +1661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "GenCompteBancaire.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenCompteBancaire.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenCompteBancaire.cs",
@@ -1639,7 +1673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "GenBanque.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenBanque.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenBanque.cs",
@@ -1651,7 +1685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "GenUnite.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenUnite.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenUnite.cs",
@@ -1663,7 +1697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 102,
               "Title": "GenTypeReglement.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenTypeReglement.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenTypeReglement.cs",
@@ -1675,7 +1709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 103,
               "Title": "RefAgent.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\RefAgent.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\RefAgent.cs",
@@ -1687,7 +1721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 104,
               "Title": "GenProduitBrd.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenProduitBrd.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenProduitBrd.cs",
@@ -1699,7 +1733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 105,
               "Title": "GenProduit.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenProduit.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenProduit.cs",
@@ -1711,7 +1745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 106,
               "Title": "GenFournisseur.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\GenFournisseur.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\GenFournisseur.cs",
@@ -1723,7 +1757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 107,
               "Title": "DepTypePrestation.cs",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Entities\\Fk\\DepTypePrestation.cs",
               "RelativeDocumentMoniker": "VectisBackend\\Entities\\Fk\\DepTypePrestation.cs",
@@ -1735,19 +1769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "VectisBackend\\appsettings.json",
-              "ToolTip": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\appsettings.json",
-              "RelativeToolTip": "VectisBackend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-08-05T09:06:14.851Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 108,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Tarek\\Desktop\\VectisProjet\\VectisBackend\\VectisBackend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "VectisBackend\\Properties\\launchSettings.json",
